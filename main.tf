@@ -1,6 +1,6 @@
 locals {
-  account_name = ""
-  repo_name = ""
+  account_name = "DolbiCode"
+  repo_name = "AbbeyDemo"
 
   project_path = "github://${local.account_name}/${local.repo_name}"
   policies_path = "${local.project_path}/policies"
@@ -16,7 +16,7 @@ resource "abbey_grant_kit" "abbey_demo_site" {
     steps = [
       {
         reviewers = {
-          one_of = ["alice@example.com"] #CHANGEME
+          one_of = ["isaacfinlan@gmail.com"] #CHANGEME
         }
       }
     ]
